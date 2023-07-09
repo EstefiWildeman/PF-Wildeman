@@ -1,6 +1,5 @@
-body{
-    background-color: aqua;
-    header{
-        background-color: black;
-    }
-}
+@import "./modulos/reset";
+@import "./modulos/variables";
+@import "./modulos/header";
+@import "./modulos/main";
+@import "./modulos/footer";
