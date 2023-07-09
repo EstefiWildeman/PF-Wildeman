@@ -3,3 +3,9 @@
 @import "./modulos/header";
 @import "./modulos/main";
 @import "./modulos/footer";
+
+body {
+    background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

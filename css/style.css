@@ -1,2 +1,42 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .nav {
+  width: 100%;
+  background-color: rgba(223, 223, 223, 0.5);
+  box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.644);
+}
+header .nav nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header .nav nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+body {
+  background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */
