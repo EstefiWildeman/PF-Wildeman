@@ -4,8 +4,18 @@
 @import "./modulos/main";
 @import "./modulos/footer";
 
+
 body {
     background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
     background-size: cover;
     background-repeat: no-repeat;
+
+    .glass {
+        height: 100vh;
+        background: rgba(111, 111, 111, 0.07);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.4px);
+        -webkit-backdrop-filter: blur(2.4px);
+        border: 1px solid rgba(111, 111, 111, 0.38);
+    }
 }

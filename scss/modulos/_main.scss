@@ -1,0 +1,23 @@
+main {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+
+    div {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    section {
+        margin-right: 200px;
+        article {
+            h3 {
+                color: white;
+                font-family: $nav;
+                font-weight: 200;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
