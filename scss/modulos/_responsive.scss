@@ -1,0 +1,153 @@
+body::before {
+    display: none;
+}
+
+header {
+    display: grid;
+    place-items: center;
+    box-shadow: 3px 3px 6px rgba(134, 130, 130, 0.267);
+
+    nav {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                    padding: 3rem;
+                    font-size: 1.5rem;
+                    font-family: $nav;
+
+                    &:hover {
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                    }
+                }
+
+                a.actual {
+                    @include actual;
+                }
+            }
+        }
+    }
+}
+
+main {
+    height: 65vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    section {
+        margin-right: 200px;
+
+        article {
+            h3 {
+                color: white;
+                font-family: $nav;
+                font-weight: 200;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    .logowp {
+        margin-right: 10px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .linkwp {
+        display: grid;
+        place-items: center;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: $nav;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-size: auto; // Ajusta el tamaño de la imagen de fondo
+    }
+
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        padding: 1.5rem; // Reduce el espaciado del enlace en dispositivos móviles
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        grid-template-columns: 1fr; // Cambia a una sola columna en dispositivos móviles
+        gap: 10px; // Reduce el espaciado entre los elementos en dispositivos móviles
+
+        div {
+            justify-content: center; // Centra la imagen horizontalmente en dispositivos móviles
+
+            img {
+                max-width: 80%; // Ajusta el tamaño de la imagen en dispositivos móviles
+            }
+        }
+
+        section {
+            margin: 0; // Elimina el margen en dispositivos móviles
+
+            article {
+                h3 {
+                    font-size: 1.2rem; // Reduce el tamaño de la fuente en dispositivos móviles
+                }
+            }
+        }
+    }
+
+    .footer {
+        .linkwp {
+            a {
+                font-size: 0.8rem; // Reduce el tamaño de la fuente en dispositivos móviles
+            }
+        }
+    }
+}

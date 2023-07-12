@@ -91,18 +91,138 @@ main section article h3 {
   font-family: inconsolata;
 }
 
+body::before {
+  display: none;
+}
+
+header {
+  display: grid;
+  place-items: center;
+  box-shadow: 3px 3px 6px rgba(134, 130, 130, 0.267);
+}
+header nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 3rem;
+  font-size: 1.5rem;
+  font-family: inconsolata;
+}
+header nav ul li a:hover {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+header nav ul li a.actual {
+  font-weight: 600;
+  color: rgb(20, 81, 161);
+  font-size: 1.6rem;
+}
+
+main {
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+main div {
+  display: flex;
+  justify-content: flex-end;
+}
+main div img {
+  max-width: 100%;
+  height: auto;
+}
+main section {
+  margin-right: 200px;
+}
+main section article h3 {
+  color: white;
+  font-family: inconsolata;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.footer .logowp {
+  margin-right: 10px;
+}
+.footer .logowp img {
+  width: 30px;
+  height: 30px;
+}
+.footer .linkwp {
+  display: grid;
+  place-items: center;
+}
+.footer .linkwp a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: inconsolata;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-size: auto;
+  }
+  header nav ul li a {
+    padding: 1.5rem;
+  }
+  main {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  main div {
+    justify-content: center;
+  }
+  main div img {
+    max-width: 80%;
+  }
+  main section {
+    margin: 0;
+  }
+  main section article h3 {
+    font-size: 1.2rem;
+  }
+  .footer .linkwp a {
+    font-size: 0.8rem;
+  }
+}
 body {
+  height: 100vh;
   background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
-  background-size: cover;
   background-repeat: no-repeat;
 }
-body .glass {
-  height: 100vh;
-  background: rgba(111, 111, 111, 0.07);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.4px);
-  -webkit-backdrop-filter: blur(2.4px);
-  border: 1px solid rgba(111, 111, 111, 0.38);
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
+  filter: blur(5px);
+  z-index: -1;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
