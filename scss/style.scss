@@ -1,10 +1,11 @@
 @import "./modulos/reset";
 @import "./modulos/variables";
+@import "./modulos/mixins";
 @import "./modulos/header";
 @import "./modulos/main";
 @import "./modulos/footer";
-@import "./modulos/mixins";
-@import "./modulos/responsive";
+
+
 
 body {
     height: 100vh;
