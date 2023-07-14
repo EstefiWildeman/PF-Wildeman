@@ -79,7 +79,6 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
-  grid-row-gap: 20px;
   grid-template-areas: "aside section";
 }
 @media screen and (max-width: 320px) {

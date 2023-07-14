@@ -20,7 +20,6 @@ body {
         "footer footer"
     ;
 
-
     @include mobile {
         grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
     }

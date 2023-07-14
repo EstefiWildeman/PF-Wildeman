@@ -11,8 +11,8 @@
     <title>Portfolio Estefania Wildeman</title>
 </head>
 
-<body>
-    <header>
+<body id="bcontacto">
+    <header id="hcontacto">
         <div>
             <img src="../assets/img/logos/LOGO CONTACTO.png" alt="LOGO" class="img-fluid">
         </div>
@@ -44,7 +44,32 @@
             </nav>
         </div>
     </header>
-        <main></main>
+
+    <main class="col d-flex flex-column h-100 align-items-center pt-4">  
+        <div class="mb-1">
+            <label for="exampleFormControlInput1" class="form-label text-white">Nombre y Apellido</label>
+            <input type="name" class="form-control form-control-sm" id="exampleFormControlInput1" required>
+        </div>
+        <div class="mb-1 ">
+            <label for="exampleFormControlInput1" class=" form-label text-white">Telefono</label>
+            <input type="number" class="form-control form-control-sm " id="exampleFormControlInput1" required>
+        </div>
+        <div class="mb-1 ">
+            <label for="exampleFormControlInput1" class="form-label text-white">Direccion de mail</label>
+            <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1"
+                placeholder="name@example.com" required>
+        </div>
+        <div class="mb-1 ">
+            <label for="exampleFormControlTextarea1" class="form-label text-white">Comentario</label>
+            <textarea class="form-control form-control-s" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Deje su comentario..." required></textarea>
+        </div>
+        <div>
+            <button type="button" class="btn btn-light btn-lg">Cancelar</button>
+            <button type="button" class="btn btn-light btn-lg">Enviar</button>
+        </div>
+    </main>
+
         <footer class="footer">
             <div class="logowp">
                 <img src="../assets/img/extras/whatsapp-logo-png.png" alt="Logo de WhatsApp">
