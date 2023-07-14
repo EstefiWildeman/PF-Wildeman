@@ -37,38 +37,38 @@ header nav button {
   font-family: inconsolata;
   font-size: 1rem;
 }
-header nav li a {
+header nav ul li a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding: 3rem;
   font-size: 1.8rem;
   font-family: inconsolata;
 }
-header nav li a:hover {
+header nav ul li a:hover {
   font-weight: 600;
   font-size: 1.6rem;
 }
 @media screen and (max-width: 320px) {
-  header nav li a {
+  header nav ul li a {
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
-  header nav li a {
+  header nav ul li a {
     font-size: 1rem;
   }
-  header nav li a:hover {
+  header nav ul li a:hover {
     font-weight: 300;
     font-size: 0.5rem;
   }
 }
-header nav li a.actual {
+header nav ul li a.actual {
   font-weight: 600;
   color: rgb(20, 81, 161);
   font-size: 1.8rem;
 }
 @media screen and (max-width: 480px) {
-  header nav li a.actual {
+  header nav ul li a.actual {
     font-size: 1rem;
   }
 }
