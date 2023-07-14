@@ -1,4 +1,5 @@
-.footer {
+footer {
+    grid-area: footer;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -7,22 +8,25 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+
     .logowp {
         margin-right: 10px;
+
         img {
             width: 30px;
             height: 30px;
         }
     }
+
     .linkwp {
         display: grid;
         place-items: center;
+
         a {
             text-decoration: none;
             color: #ffffff;
             font-family: $nav;
         }
     }
+
 }
-
-

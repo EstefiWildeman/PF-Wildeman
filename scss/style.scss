@@ -1,25 +1,21 @@
+@import "./modulos/mixins";
 @import "./modulos/reset";
 @import "./modulos/variables";
-@import "./modulos/mixins";
 @import "./modulos/header";
 @import "./modulos/main";
 @import "./modulos/footer";
 
 
-
 body {
-    height: 100vh;
     background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
-    background-repeat: no-repeat;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
-    filter: blur(5px); // Ajusta el valor de "5px" según tus preferencias
-    z-index: -1;
-    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr, 1fr, 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+    ;
 }
