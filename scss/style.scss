@@ -5,13 +5,9 @@
 @import "./modulos/main";
 @import "./modulos/footer";
 
-html{
-    width: fit-content;
-}
 
 body {
     height: 100vh;
-    width:fit-content;
     background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
