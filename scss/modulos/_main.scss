@@ -11,8 +11,21 @@ main {
         "aside section"
     ;
 
-    @include mobile{
+    @include mobilemin {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "section"
+            "aside"
+
+        ;
+    }
+
+    @include mobile {
         height: 60vh;
+        
     }
 
     aside {
@@ -20,6 +33,12 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        img{
+            @include mobilemin{
+                width:40%;
+                
+            }
+        }
     }
 
     section {
@@ -28,18 +47,25 @@ main {
         align-items: center;
         justify-content: center;
 
+        @include mobile {
+            width:90%;
+        }
+
+
+
         article {
             text-align: left;
             padding-right: 100px;
 
-            @include mobile{
+            @include mobile {
                 text-align: center;
+                width:100%;
             }
 
-            p{
+            p {
                 width: 100vh;
 
-                @include mobile{
+                @include mobile {
                     width: 40vh;
                 }
             }
@@ -56,8 +82,8 @@ main section article h1 {
     padding: 35px;
     border-radius: 30%;
 
-    @include mobile{
-        font-size: 0.8rem;
+    @include mobile {
+        font-size: 1rem;
         padding: 0;
         border-radius: 10px;
         line-height: 1rem;

@@ -5,10 +5,14 @@
 @import "./modulos/main";
 @import "./modulos/footer";
 
+html{
+    width: fit-content;
+}
 
 body {
     height: 100vh;
-    background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
+    width:fit-content;
+    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.5fr, 1fr, 1fr;
@@ -20,7 +24,8 @@ body {
         "footer footer"
     ;
 
-    @include mobile{
+
+    @include mobile {
         grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
     }
 }

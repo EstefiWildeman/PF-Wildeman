@@ -23,6 +23,11 @@ header nav {
   background-color: rgba(255, 255, 255, 0.582);
   box-shadow: 3px 3px 6px rgba(134, 130, 130, 0.267);
 }
+@media screen and (max-width: 320px) {
+  header nav {
+    background-color: rgb(255, 255, 255);
+  }
+}
 @media screen and (max-width: 480px) {
   header nav {
     background-color: rgb(255, 255, 255);
@@ -42,6 +47,11 @@ header nav li a {
 header nav li a:hover {
   font-weight: 600;
   font-size: 1.6rem;
+}
+@media screen and (max-width: 320px) {
+  header nav li a {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 480px) {
   header nav li a {
@@ -72,6 +82,15 @@ main {
   grid-row-gap: 20px;
   grid-template-areas: "aside section";
 }
+@media screen and (max-width: 320px) {
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "section" "aside";
+  }
+}
 @media screen and (max-width: 480px) {
   main {
     height: 60vh;
@@ -83,11 +102,21 @@ main aside {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 320px) {
+  main aside img {
+    width: 40%;
+  }
+}
 main section {
   grid-area: section;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  main section {
+    width: 90%;
+  }
 }
 main section article {
   text-align: left;
@@ -96,6 +125,7 @@ main section article {
 @media screen and (max-width: 480px) {
   main section article {
     text-align: center;
+    width: 100%;
   }
 }
 main section article p {
@@ -118,7 +148,7 @@ main section article h1 {
 }
 @media screen and (max-width: 480px) {
   main section article h1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0;
     border-radius: 10px;
     line-height: 1rem;
@@ -153,9 +183,14 @@ footer .linkwp a {
   font-family: inconsolata;
 }
 
+html {
+  width: fit-content;
+}
+
 body {
   height: 100vh;
-  background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
+  width: fit-content;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0.5fr, 1fr, 1fr;

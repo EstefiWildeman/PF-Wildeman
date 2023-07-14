@@ -17,6 +17,11 @@ header {
         background-color: rgba(255, 255, 255, 0.582);
         box-shadow: 3px 3px 6px rgba(134, 130, 130, 0.267);
 
+        @include mobilemin{
+            background-color: rgb(255, 255, 255);
+        
+        }
+
         @include mobile{
             background-color: rgb(255, 255, 255);
         }
@@ -38,6 +43,10 @@ header {
                 &:hover {
                     font-weight: 600;
                     font-size: 1.6rem;
+                }
+
+                @include mobilemin{
+                    font-size: 1rem;
                 }
 
                 @include mobile{
