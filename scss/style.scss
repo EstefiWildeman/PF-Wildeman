@@ -7,6 +7,7 @@
 
 
 body {
+    height: 100vh;
     background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -18,4 +19,8 @@ body {
         "main main"
         "footer footer"
     ;
+
+    @include mobile{
+        grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
+    }
 }

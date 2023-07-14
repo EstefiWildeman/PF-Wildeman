@@ -9,6 +9,11 @@
 header {
   grid-area: header;
 }
+@media screen and (max-width: 480px) {
+  header {
+    height: 3vh;
+  }
+}
 header div {
   display: flex;
   align-items: center;
@@ -17,6 +22,15 @@ header div {
 header nav {
   background-color: rgba(255, 255, 255, 0.582);
   box-shadow: 3px 3px 6px rgba(134, 130, 130, 0.267);
+}
+@media screen and (max-width: 480px) {
+  header nav {
+    background-color: rgb(255, 255, 255);
+  }
+}
+header nav button {
+  font-family: inconsolata;
+  font-size: 1rem;
 }
 header nav li a {
   text-decoration: none;
@@ -29,10 +43,24 @@ header nav li a:hover {
   font-weight: 600;
   font-size: 1.6rem;
 }
+@media screen and (max-width: 480px) {
+  header nav li a {
+    font-size: 1rem;
+  }
+  header nav li a:hover {
+    font-weight: 300;
+    font-size: 0.5rem;
+  }
+}
 header nav li a.actual {
   font-weight: 600;
   color: rgb(20, 81, 161);
   font-size: 1.8rem;
+}
+@media screen and (max-width: 480px) {
+  header nav li a.actual {
+    font-size: 1rem;
+  }
 }
 
 main {
@@ -43,6 +71,11 @@ main {
   grid-column-gap: 0px;
   grid-row-gap: 20px;
   grid-template-areas: "aside section";
+}
+@media screen and (max-width: 480px) {
+  main {
+    height: 60vh;
+  }
 }
 main aside {
   grid-area: aside;
@@ -60,6 +93,19 @@ main section article {
   text-align: left;
   padding-right: 100px;
 }
+@media screen and (max-width: 480px) {
+  main section article {
+    text-align: center;
+  }
+}
+main section article p {
+  width: 100vh;
+}
+@media screen and (max-width: 480px) {
+  main section article p {
+    width: 40vh;
+  }
+}
 
 main section article h1 {
   font-size: 1.5rem;
@@ -69,6 +115,14 @@ main section article h1 {
   background-color: rgba(255, 255, 255, 0.219);
   padding: 35px;
   border-radius: 30%;
+}
+@media screen and (max-width: 480px) {
+  main section article h1 {
+    font-size: 0.8rem;
+    padding: 0;
+    border-radius: 10px;
+    line-height: 1rem;
+  }
 }
 
 footer {
@@ -100,6 +154,7 @@ footer .linkwp a {
 }
 
 body {
+  height: 100vh;
   background-image: url(../assets/img/fondo/Diseño\ sin\ título\ \(9\).png);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -107,6 +162,11 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-areas: "header header" "main main" "footer footer";
+}
+@media screen and (max-width: 480px) {
+  body {
+    grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
