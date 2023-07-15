@@ -144,6 +144,7 @@ main section {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 }
 main section article {
@@ -204,6 +205,9 @@ main section article h1 {
     border-radius: 10px;
     width: 100%;
     align-self: flex-start;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
