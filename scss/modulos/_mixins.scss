@@ -5,6 +5,12 @@
     @include mobile{
         font-size: 1rem;
     }
+    @include tablet{
+        font-size: 1rem;
+    }
+    @include desktop{
+        font-size: 1.4rem;
+    }
 }
 
 
@@ -21,13 +27,13 @@
 }
 
 @mixin tablet {
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 481px) and (max-width: 600px) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media screen and (max-width: 1024px) {
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
         @content;
     }
 }
