@@ -68,15 +68,17 @@ main {
 
         @include tablet {
             height: 50%;
-            width: 50%;
+            width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            flex-wrap: wrap;
         }
 
         article {
             text-align: left;
             padding-right: 100px;
+            flex-grow: 1;
 
             @include mobile {
                 text-align: center;
