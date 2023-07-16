@@ -351,6 +351,7 @@ main.cuerpointereses section.seccionuno {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  padding-right: 25px;
 }
 main.cuerpointereses section.seccionuno div {
   display: flex;

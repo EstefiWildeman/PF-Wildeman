@@ -261,9 +261,13 @@ main.cuerpointereses {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+        padding-right: 25px;
+
+
         div{
             display: flex;
             align-items: center;
+            
 
             @include mobile{
                 padding-top: 100px;
@@ -273,6 +277,7 @@ main.cuerpointereses {
                 font-size: 1.5rem;
                 color: white;
                 font-family: $nav;
+                
 
                 @include mobilemin{
                     font-size: 0.5rem;
