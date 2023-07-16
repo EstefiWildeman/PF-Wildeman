@@ -187,9 +187,9 @@ main.cuerpoestudios {
     font-family: sans-serif;
     display: flex;
     align-items: center;
-    min-height: 70vh;
 
     .contenedor {
+        padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
 
@@ -198,12 +198,27 @@ main.cuerpoestudios {
             gap: 20rem;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 
+            @include mobile {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                gap: 5rem;
+            }
+
+            @include tablet {
+                gap: 5rem;
+            }
+
+            @include desktop {
+                gap: 10rem;
+            }
+
+            @include desktopmax {
+                gap: 30rem;
+            }
+
             .card {
                 display: flex;
-                flex-wrap: wrap;
-                // background-color: rgba(255, 255, 255, 0.877);
-                // display: flex;
-                // flex-wrap: wrap;
+                background-color: rgb(255, 255, 255);
 
                 .card-header {
                     flex-basis: 100%;
@@ -216,12 +231,8 @@ main.cuerpoestudios {
                     flex-wrap: wrap;
                     flex-basis: 100%;
                     margin-top: 1.2rem;
-            
-
                 }
             }
-
         }
-
     }
 }

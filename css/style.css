@@ -282,9 +282,9 @@ main.cuerpoestudios {
   font-family: sans-serif;
   display: flex;
   align-items: center;
-  min-height: 70vh;
 }
 main.cuerpoestudios .contenedor {
+  padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -293,9 +293,31 @@ main.cuerpoestudios .contenedor .card-section {
   gap: 20rem;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
+@media screen and (max-width: 480px) {
+  main.cuerpoestudios .contenedor .card-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  main.cuerpoestudios .contenedor .card-section {
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  main.cuerpoestudios .contenedor .card-section {
+    gap: 10rem;
+  }
+}
+@media screen and (min-width: 1544px) {
+  main.cuerpoestudios .contenedor .card-section {
+    gap: 30rem;
+  }
+}
 main.cuerpoestudios .contenedor .card-section .card {
   display: flex;
-  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
 }
 main.cuerpoestudios .contenedor .card-section .card .card-header {
   flex-basis: 100%;

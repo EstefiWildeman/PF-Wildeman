@@ -48,3 +48,9 @@
         @content;
     }
 }
+
+@mixin desktopmax{
+    @media screen and (min-width: 1544px){
+        @content;
+    }
+}
