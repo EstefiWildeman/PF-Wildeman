@@ -93,7 +93,7 @@ header nav ul li a.actual {
   }
 }
 
-main {
+main.cuerpoindex {
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -102,7 +102,7 @@ main {
   grid-template-areas: "aside section";
 }
 @media screen and (max-width: 320px) {
-  main {
+  main.cuerpoindex {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -110,12 +110,12 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
-  main {
+  main.cuerpoindex {
     height: 60vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main {
+  main.cuerpoindex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -123,25 +123,25 @@ main {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main {
+  main.cuerpoindex {
     display: flex;
   }
 }
-main aside {
+main.cuerpoindex aside {
   grid-area: aside;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main aside {
+  main.cuerpoindex aside {
     width: 50%;
     height: 50%;
     flex-direction: column;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main aside {
+  main.cuerpoindex aside {
     flex-direction: column;
     width: 50%;
     height: min-content;
@@ -150,34 +150,34 @@ main aside {
   }
 }
 @media screen and (max-width: 320px) {
-  main aside img {
+  main.cuerpoindex aside img {
     width: 40%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main aside img {
+  main.cuerpoindex aside img {
     padding-top: 100px;
     width: 60%;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main aside img {
+  main.cuerpoindex aside img {
     width: 55%;
   }
 }
-main section {
+main.cuerpoindex section {
   grid-area: section;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 480px) {
-  main section {
+  main.cuerpoindex section {
     width: 90%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main section {
+  main.cuerpoindex section {
     height: 50%;
     width: 50%;
     display: flex;
@@ -186,43 +186,43 @@ main section {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main section {
+  main.cuerpoindex section {
     width: 50%;
     padding-right: 20px;
   }
 }
-main section article {
+main.cuerpoindex section article {
   text-align: left;
   padding-right: 50px;
   flex-grow: 1;
 }
 @media screen and (max-width: 480px) {
-  main section article {
+  main.cuerpoindex section article {
     text-align: center;
     width: 100%;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main section article {
+  main.cuerpoindex section article {
     width: 90%;
     padding-right: 20px;
   }
 }
-main section article p {
+main.cuerpoindex section article p {
   width: 100vh;
 }
 @media screen and (max-width: 480px) {
-  main section article p {
+  main.cuerpoindex section article p {
     width: 40vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main section article p {
+  main.cuerpoindex section article p {
     width: 100vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main section article {
+  main.cuerpoindex section article {
     height: 50%;
     width: 100%;
     display: flex;
@@ -277,59 +277,36 @@ main div label {
 }
 
 main.cuerpoestudios {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto;
-  grid-template-areas: "asideuno asidedos";
-}
-@media screen and (max-width: 320px) {
-  main.cuerpoestudios {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "asideuno" "asidedos";
-  }
-}
-@media screen and (max-width: 480px) {
-  main.cuerpoestudios {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "asideuno" "asidedos";
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoestudios {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "asideuno" "asidedos";
-  }
-}
-main.cuerpoestudios #uno {
-  grid-area: asideuno;
-}
-main.cuerpoestudios #uno div {
-  background: rgba(255, 255, 255, 0.14);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.7px);
-  -webkit-backdrop-filter: blur(3.7px);
-  border: 1px solid rgb(255, 255, 255);
-}
-main.cuerpoestudios #dos {
-  grid-area: asidedos;
-}
-main.cuerpoestudios #dos div {
-  background: rgba(255, 255, 255, 0.14);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.7px);
-  -webkit-backdrop-filter: blur(3.7px);
-  border: 1px solid rgb(255, 255, 255);
-}
-
-main.cuerpoestudios aside h1 {
-  font-size: 1.5rem;
-  font-family: inconsolata;
-  text-align: center;
-  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+main.cuerpoestudios .contenedor {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+main.cuerpoestudios .contenedor .card-section {
+  display: grid;
+  gap: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+main.cuerpoestudios .contenedor .card-section .card {
+  display: flex;
+  flex-wrap: wrap;
+}
+main.cuerpoestudios .contenedor .card-section .card .card-header {
+  flex-basis: 100%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+main.cuerpoestudios .contenedor .card-section .card .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-top: 1.2rem;
 }
 
 footer {
@@ -360,7 +337,7 @@ footer .linkwp a {
   font-family: inconsolata;
 }
 
-body {
+body.index {
   height: 100vh;
   background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
   display: grid;
@@ -371,9 +348,14 @@ body {
   grid-template-areas: "header header" "main main" "footer footer";
 }
 @media screen and (max-width: 480px) {
-  body {
+  body.index {
     grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
   }
+}
+
+body.estudios {
+  height: 100vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
 }
 
 /*# sourceMappingURL=style.css.map */

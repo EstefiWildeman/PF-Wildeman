@@ -6,7 +6,7 @@
 @import "./modulos/footer";
 
 
-body {
+body.index {
     height: 100vh;
     background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
     display: grid;
@@ -23,6 +23,11 @@ body {
     @include mobile {
         grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
     }
+}
+
+body.estudios{
+    height: 100vh;
+    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
 }
 
 
