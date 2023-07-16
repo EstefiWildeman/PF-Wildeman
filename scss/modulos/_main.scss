@@ -236,3 +236,116 @@ main.cuerpoestudios {
         }
     }
 }
+
+main.cuerpointereses {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "aside seccionuno"
+        "aside secciondos"
+    ;
+
+    aside {
+        grid-area: aside;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.seccionuno {
+        grid-area: seccionuno;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        div{
+            display: flex;
+            align-items: center;
+
+            @include mobile{
+                padding-top: 100px;
+            }
+
+            h1{
+                font-size: 1.5rem;
+                color: white;
+                font-family: $nav;
+
+                @include mobilemin{
+                    font-size: 0.5rem;
+                    
+                }
+
+                @include mobile{
+                    font-size: 0.8rem;
+                }
+
+                @include tablet{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    section.secciondos {
+        grid-area: secciondos;
+
+        .slider {
+            width: 60%;
+            margin: auto;
+            height: auto;
+            overflow: hidden;
+
+            ul {
+                padding: 0;
+                display: flex;
+                width: 200%;
+                animation: slider 10s infinite alternate;
+                
+
+                li {
+                    width: 60%;
+                    list-style: none;
+
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes slider {
+    0% {
+        margin-left: o;
+    }
+
+    20% {
+        margin-left: -5%;
+    }
+
+    25% {
+        margin-left: -50%;
+    }
+
+    45% {
+        margin-left: -50%;
+    }
+
+    50% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}

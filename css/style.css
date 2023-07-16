@@ -331,6 +331,102 @@ main.cuerpoestudios .contenedor .card-section .card .card-body {
   margin-top: 1.2rem;
 }
 
+main.cuerpointereses {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "aside seccionuno" "aside secciondos";
+}
+main.cuerpointereses aside {
+  grid-area: aside;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+main.cuerpointereses section.seccionuno {
+  grid-area: seccionuno;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+main.cuerpointereses section.seccionuno div {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  main.cuerpointereses section.seccionuno div {
+    padding-top: 100px;
+  }
+}
+main.cuerpointereses section.seccionuno div h1 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: inconsolata;
+}
+@media screen and (max-width: 320px) {
+  main.cuerpointereses section.seccionuno div h1 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  main.cuerpointereses section.seccionuno div h1 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  main.cuerpointereses section.seccionuno div h1 {
+    font-size: 1rem;
+  }
+}
+main.cuerpointereses section.secciondos {
+  grid-area: secciondos;
+}
+main.cuerpointereses section.secciondos .slider {
+  width: 60%;
+  margin: auto;
+  height: auto;
+  overflow: hidden;
+}
+main.cuerpointereses section.secciondos .slider ul {
+  padding: 0;
+  display: flex;
+  width: 200%;
+  animation: slider 10s infinite alternate;
+}
+main.cuerpointereses section.secciondos .slider ul li {
+  width: 60%;
+  list-style: none;
+}
+main.cuerpointereses section.secciondos .slider ul li img {
+  width: 60%;
+}
+
+@keyframes slider {
+  0% {
+    margin-left: o;
+  }
+  20% {
+    margin-left: -5%;
+  }
+  25% {
+    margin-left: -50%;
+  }
+  45% {
+    margin-left: -50%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
 footer {
   grid-area: footer;
   position: fixed;
@@ -376,6 +472,11 @@ body.index {
 }
 
 body.estudios {
+  height: 100vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
+body.intereses {
   height: 100vh;
   background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
 }
