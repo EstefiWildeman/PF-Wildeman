@@ -20,17 +20,17 @@ header {
         box-shadow: 3px 3px 6px rgba(134, 130, 130, 0.267);
 
         @include mobilemin {
-            background-color: rgb(255, 255, 255);
+            background-color: $text;
 
         }
 
         @include mobile {
-            background-color: rgb(255, 255, 255);
+            background-color: $text;
         }
 
         button {
             font-family: $nav;
-            font-size: 1rem;
+            font-size: $font;
 
         }
 
@@ -49,11 +49,11 @@ header {
                     }
     
                     @include mobilemin {
-                        font-size: 1rem;
+                        font-size: $font;
                     }
     
                     @include mobile {
-                        font-size: 1rem;
+                        font-size: $font;
     
                         &:hover {
                             font-weight: 300;
@@ -62,7 +62,7 @@ header {
                     }
 
                     @include tablet{
-                        font-size: 1rem
+                        font-size: $font;
                     }
 
                     @include desktop{

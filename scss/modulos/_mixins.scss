@@ -16,6 +16,11 @@
     }
 }
 
+@mixin body{
+    height: 100vh;
+    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
 @mixin estudios {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);

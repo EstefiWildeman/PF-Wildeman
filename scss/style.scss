@@ -1,38 +1,12 @@
 @import "./modulos/mixins";
 @import "./modulos/reset";
 @import "./modulos/variables";
+@import "./modulos/body";
 @import "./modulos/header";
 @import "./modulos/main";
 @import "./modulos/footer";
 
 
-body.index {
-    height: 100vh;
-    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr, 1fr, 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer"
-    ;
 
-    @include mobile {
-        grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
-    }
-}
-
-body.estudios{
-    height: 100vh;
-    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
-}
-
-body.intereses{
-    height: 100vh;
-    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
-}
 
 

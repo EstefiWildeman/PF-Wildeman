@@ -1,0 +1,31 @@
+body.index {
+    height: 100vh;
+    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr, 1fr, 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+    ;
+
+    @include mobile {
+        grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
+    }
+}
+
+body.estudios {
+    @include body;
+}
+
+body.intereses {
+    @include body;
+}
+
+body.sobremi {
+    height: 130vh;
+    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}

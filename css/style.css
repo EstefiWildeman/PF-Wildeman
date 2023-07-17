@@ -6,6 +6,37 @@
   box-sizing: border-box;
 }
 
+body.index {
+  height: 100vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr, 1fr, 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: "header header" "main main" "footer footer";
+}
+@media screen and (max-width: 480px) {
+  body.index {
+    grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
+  }
+}
+
+body.estudios {
+  height: 100vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
+body.intereses {
+  height: 100vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
+body.sobremi {
+  height: 130vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
 header {
   grid-area: header;
 }
@@ -25,12 +56,12 @@ header nav {
 }
 @media screen and (max-width: 320px) {
   header nav {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
   }
 }
 @media screen and (max-width: 480px) {
   header nav {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
   }
 }
 header nav button {
@@ -208,31 +239,7 @@ main.cuerpoindex section article {
     padding-right: 20px;
   }
 }
-main.cuerpoindex section article p {
-  width: 100vh;
-}
-@media screen and (max-width: 480px) {
-  main.cuerpoindex section article p {
-    width: 40vh;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoindex section article p {
-    width: 100vh;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoindex section article {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-  }
-}
-
-main section article h1 {
+main.cuerpoindex section article h1 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: inconsolata;
@@ -242,7 +249,7 @@ main section article h1 {
   border-radius: 30%;
 }
 @media screen and (max-width: 480px) {
-  main section article h1 {
+  main.cuerpoindex section article h1 {
     font-size: 1rem;
     padding: 0;
     border-radius: 10px;
@@ -250,7 +257,7 @@ main section article h1 {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main section article h1 {
+  main.cuerpoindex section article h1 {
     font-size: 0.8rem;
     line-height: 1rem;
     padding: 0.5rem;
@@ -263,11 +270,21 @@ main section article h1 {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main section article h1 {
+  main.cuerpoindex section article h1 {
     font-size: 1rem;
     padding: 20px;
     border-radius: 15px;
     line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  main.cuerpoindex section article {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
   }
 }
 
@@ -428,6 +445,55 @@ main.cuerpointereses section.secciondos .slider ul li img {
     margin-left: -200%;
   }
 }
+@media screen and (max-width: 480px) {
+  main.cuerposm .container {
+    margin-top: 100px;
+  }
+}
+main.cuerposm .container div h1 {
+  font-family: inconsolata;
+  color: white;
+}
+main.cuerposm .container div {
+  background-color: rgba(0, 0, 0, 0.411);
+}
+main.cuerposm .container div div ul li {
+  color: rgb(20, 81, 161);
+}
+main.cuerposm .container div div ul li span.title {
+  font-size: 1.5rem;
+  font-family: inconsolata;
+  font-weight: 500;
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  main.cuerposm .container div div ul li span.title {
+    font-size: 1rem;
+  }
+}
+main.cuerposm .container div div ul li span.value {
+  font-size: 1.3rem;
+  font-family: inconsolata;
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  main.cuerposm .container div div ul li span.value {
+    font-size: 0.8rem;
+  }
+}
+main.cuerposm .container div h2 {
+  font-family: inconsolata;
+  color: white;
+}
+main.cuerposm .container div .background {
+  background-color: rgba(255, 255, 255, 0.342);
+}
+main.cuerposm .container div h6 {
+  font-size: 1.5rem;
+  font-family: inconsolata;
+  color: white;
+}
+
 footer {
   grid-area: footer;
   position: fixed;
@@ -454,32 +520,6 @@ footer .linkwp a {
   text-decoration: none;
   color: #ffffff;
   font-family: inconsolata;
-}
-
-body.index {
-  height: 100vh;
-  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.5fr, 1fr, 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-areas: "header header" "main main" "footer footer";
-}
-@media screen and (max-width: 480px) {
-  body.index {
-    grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
-  }
-}
-
-body.estudios {
-  height: 100vh;
-  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
-}
-
-body.intereses {
-  height: 100vh;
-  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
 }
 
 /*# sourceMappingURL=style.css.map */
