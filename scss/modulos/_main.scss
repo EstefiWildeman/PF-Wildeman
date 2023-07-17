@@ -219,7 +219,23 @@ main.cuerpoestudios {
                     display: flex;
                     flex-wrap: wrap;
                     flex-basis: 100%;
-                    margin-top: 1.2rem;
+                    margin-top: 1rem;
+
+                    h1 {
+                        font-size: 1.2rem;
+                        font-family: $nav;
+                        @include mobile{
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    h2 {
+                        font-size: 1.2rem;
+                        font-family: $nav;
+                        @include mobile{
+                            font-size: 0.8rem;
+                        }
+                    }
                 }
             }
         }
@@ -263,7 +279,7 @@ main.cuerpointereses {
             }
 
             h1 {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 color: $text;
                 font-family: $nav;
 
