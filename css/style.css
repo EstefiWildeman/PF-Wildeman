@@ -334,7 +334,7 @@ main.cuerpoestudios .contenedor .card-section {
 }
 main.cuerpoestudios .contenedor .card-section .card {
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 main.cuerpoestudios .contenedor .card-section .card .card-header {
   flex-basis: 100%;
