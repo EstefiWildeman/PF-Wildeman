@@ -1,5 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+body.intereses, body.estudios {
+  height: 100vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
+header nav ul li a.actual {
+  font-weight: 600;
+  color: rgb(20, 81, 161);
+  font-size: 1.8rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,19 +33,20 @@ body.index {
   }
 }
 
-body.estudios {
-  height: 100vh;
-  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
-}
-
-body.intereses {
-  height: 100vh;
-  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
-}
-
 body.sobremi {
   height: 130vh;
   background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
+body.estudios, body.intereses {
+  height: 100vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
+header nav ul li a.actual {
+  font-weight: 600;
+  color: rgb(20, 81, 161);
+  font-size: 1.8rem;
 }
 
 header {
@@ -103,11 +115,6 @@ header nav ul li a:hover {
     font-size: 1.4rem;
   }
 }
-header nav ul li a.actual {
-  font-weight: 600;
-  color: rgb(20, 81, 161);
-  font-size: 1.8rem;
-}
 @media screen and (max-width: 480px) {
   header nav ul li a.actual {
     font-size: 1rem;
@@ -122,6 +129,17 @@ header nav ul li a.actual {
   header nav ul li a.actual {
     font-size: 1.4rem;
   }
+}
+
+body.estudios, body.intereses {
+  height: 100vh;
+  background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
+header nav ul li a.actual {
+  font-weight: 600;
+  color: rgb(20, 81, 161);
+  font-size: 1.8rem;
 }
 
 main.cuerpoindex {

@@ -18,11 +18,11 @@ body.index {
 }
 
 body.estudios {
-    @include body;
+    @extend %body;
 }
 
 body.intereses {
-    @include body;
+    @extend %body;
 }
 
 body.sobremi {

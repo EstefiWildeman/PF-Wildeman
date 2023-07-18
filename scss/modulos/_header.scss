@@ -71,7 +71,18 @@ header {
                 }
     
                 a.actual {
-                    @include actual;
+                    @extend %actual;
+                    @include mobile {
+                        font-size: 1rem;
+                    }
+                
+                    @include tablet {
+                        font-size: 1rem;
+                    }
+                
+                    @include desktop {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }

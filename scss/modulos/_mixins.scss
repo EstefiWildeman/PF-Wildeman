@@ -1,41 +1,20 @@
 // EXTEND
 
-%estudios{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:
-        "asideuno"
-        "asidedos"
-    ;
+%body{
+    height: 100vh;
+    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+}
+
+%actual{
+    font-weight: 600;
+    color: rgb(20, 81, 161);
+    font-size: 1.8rem;
+
 }
 
 
 
 //MIXINS
-
-@mixin actual {
-    font-weight: 600;
-    color: rgb(20, 81, 161);
-    font-size: 1.8rem;
-
-    @include mobile {
-        font-size: 1rem;
-    }
-
-    @include tablet {
-        font-size: 1rem;
-    }
-
-    @include desktop {
-        font-size: 1.4rem;
-    }
-}
-
-@mixin body{
-    height: 100vh;
-    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
-}
-
 
 @mixin mobilemin {
     @media screen and (max-width: 320px) {
