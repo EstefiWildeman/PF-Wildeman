@@ -173,25 +173,24 @@ main {
 }
 
 main.cuerpoestudios {
-    height: 70vh;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(0, 0, 0);
     font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 6%;
 
 
     .contenedor {
-        padding-top: 2rem;
+        padding-top: 5rem;
         padding-left: 2rem;
         padding-right: 2rem;
 
         .card-section {
             display: grid;
             gap: 20rem;
-            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
             @include mobile {
                 padding-top: 5rem;
@@ -204,7 +203,7 @@ main.cuerpoestudios {
             }
 
             @include desktop {
-                gap: 10rem;
+                gap: 5rem;
             }
 
             @include desktopmax {
