@@ -42,44 +42,61 @@ header {
                     padding: 3rem;
                     font-size: 1.8rem;
                     font-family: $nav;
-    
+
+                    @include mobilemin {
+                        padding: 0%;
+                    }
+
+                    @include mobile {
+                        padding: 0%;
+                    }
+
+                    @include tablet{
+                        padding: 0%;
+                    }
+
+                    @include desktop{
+                        padding: 0%;
+                    }
+
                     &:hover {
                         font-weight: 600;
                         font-size: 1.6rem;
                     }
-    
+
                     @include mobilemin {
                         font-size: $font;
                     }
-    
+
                     @include mobile {
                         font-size: $font;
-    
+
                         &:hover {
                             font-weight: 300;
                             font-size: 0.5rem;
                         }
                     }
 
-                    @include tablet{
+                    @include tablet {
                         font-size: $font;
                     }
 
-                    @include desktop{
+                    @include desktop {
                         font-size: 1.4rem;
                     }
                 }
-    
+
                 a.actual {
                     @extend %actual;
+
                     @include mobile {
                         font-size: 1rem;
                     }
-                
+
                     @include tablet {
                         font-size: 1rem;
                     }
-                
+
                     @include desktop {
                         font-size: 1.4rem;
                     }
@@ -87,6 +104,6 @@ header {
             }
         }
 
-        
+
     }
 }

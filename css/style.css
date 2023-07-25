@@ -87,6 +87,26 @@ header nav ul li a {
   font-size: 1.8rem;
   font-family: inconsolata;
 }
+@media screen and (max-width: 320px) {
+  header nav ul li a {
+    padding: 0%;
+  }
+}
+@media screen and (max-width: 480px) {
+  header nav ul li a {
+    padding: 0%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  header nav ul li a {
+    padding: 0%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header nav ul li a {
+    padding: 0%;
+  }
+}
 header nav ul li a:hover {
   font-weight: 600;
   font-size: 1.6rem;
@@ -362,8 +382,8 @@ main.cuerpoestudios .contenedor .card-section .card .card-header {
 main.cuerpoestudios .contenedor .card-section .card .card-body {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 100%;
-  margin-top: 1rem;
+  flex-basis: 80%;
+  margin-top: 0.3rem;
 }
 main.cuerpoestudios .contenedor .card-section .card .card-body h1 {
   font-size: 1.2rem;
@@ -530,11 +550,12 @@ main.cuerposm .container div h6 {
   color: white;
 }
 
+main.contacto {
+  height: 60vh;
+}
+
 footer {
   grid-area: footer;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -547,15 +568,6 @@ footer .logowp {
 footer .logowp img {
   width: 30px;
   height: 30px;
-}
-footer .linkwp {
-  display: grid;
-  place-items: center;
-}
-footer .linkwp a {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: inconsolata;
 }
 
 /*# sourceMappingURL=style.css.map */
