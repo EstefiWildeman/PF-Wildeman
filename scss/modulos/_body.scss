@@ -1,5 +1,6 @@
 body.index {
     height: 100vh;
+    max-width: max-content;
     background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -19,13 +20,16 @@ body.index {
 
 body.estudios {
     @extend %body;
+    max-width: max-content;
 }
 
 body.intereses {
     @extend %body;
+    max-width: 1980px;
 }
 
 body.sobremi {
     height: 130vh;
+    max-width:min-content;
     background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
 }

@@ -19,6 +19,7 @@ header nav ul li a.actual {
 
 body.index {
   height: 100vh;
+  max-width: max-content;
   background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -33,8 +34,17 @@ body.index {
   }
 }
 
+body.estudios {
+  max-width: max-content;
+}
+
+body.intereses {
+  max-width: 1980px;
+}
+
 body.sobremi {
   height: 130vh;
+  max-width: min-content;
   background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
 }
 
@@ -333,6 +343,7 @@ main div label {
 }
 
 main.cuerpoestudios {
+  height: 70vh;
   background-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
   font-family: sans-serif;
@@ -349,7 +360,7 @@ main.cuerpoestudios .contenedor {
 main.cuerpoestudios .contenedor .card-section {
   display: grid;
   gap: 20rem;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 @media screen and (max-width: 480px) {
   main.cuerpoestudios .contenedor .card-section {
