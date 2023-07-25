@@ -1,6 +1,7 @@
 @import "../modulos/mixins";
 
 main.cuerpoindex {
+    height: 70vh;
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
