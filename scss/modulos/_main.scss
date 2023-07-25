@@ -176,6 +176,9 @@ main.cuerpoestudios {
     font-family: sans-serif;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
 
     .contenedor {
         padding-top: 2rem;
@@ -218,13 +221,14 @@ main.cuerpoestudios {
                 .card-body {
                     display: flex;
                     flex-wrap: wrap;
-                    flex-basis: 80%;
-                    margin-top: 0.3rem;
+                    flex-basis: 60%;
+
 
                     h1 {
                         font-size: 1.2rem;
                         font-family: $nav;
-                        @include mobile{
+
+                        @include mobile {
                             font-size: 0.8rem;
                         }
                     }
@@ -232,7 +236,8 @@ main.cuerpoestudios {
                     h2 {
                         font-size: 1.2rem;
                         font-family: $nav;
-                        @include mobile{
+
+                        @include mobile {
                             font-size: 0.8rem;
                         }
                     }
@@ -409,6 +414,7 @@ main.cuerposm {
         }
 
         div {
+
             h2 {
                 font-family: $nav;
                 color: $text;
@@ -429,6 +435,6 @@ main.cuerposm {
     }
 }
 
-main.contacto{
+main.contacto {
     height: 60vh;
 }
