@@ -445,6 +445,10 @@ main.cuerpoSM {
             display: flex;
             justify-content: center;
             gap: 100px;
+
+            @include mobile{
+                gap: 50px;
+            }
             div{
                 display: flex;
                 align-items: center;
@@ -455,6 +459,9 @@ main.cuerpoSM {
                     h5{
                         text-align: center;
                         color: $text;
+                        @include mobile{
+                            font-size: 0.8rem;
+                        }
                     }
                 }
                 

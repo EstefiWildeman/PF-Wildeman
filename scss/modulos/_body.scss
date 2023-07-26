@@ -28,6 +28,5 @@ body.intereses {
 }
 
 body.sobreMi {
-    height: 100vh;
-    background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
+    @extend %body;
 }
