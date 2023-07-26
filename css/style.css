@@ -556,6 +556,28 @@ main.cuerpoSM .container div h6 {
   font-family: inconsolata;
   color: white;
 }
+main.cuerpoSM .container div h4 {
+  font-family: inconsolata;
+  color: white;
+}
+main.cuerpoSM .container .archivos {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+main.cuerpoSM .container .archivos div {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+main.cuerpoSM .container .archivos div a {
+  text-decoration: none;
+}
+main.cuerpoSM .container .archivos div a h5 {
+  text-align: center;
+  color: white;
+}
 
 main.contacto {
   height: 60vh;
