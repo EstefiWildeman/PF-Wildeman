@@ -38,9 +38,8 @@ body.intereses {
   max-width: max-content;
 }
 
-body.sobremi {
+body.sobreMi {
   height: 100vh;
-  width: 1980px;
   background-image: url(../assets/img/fondo/Diseño-sin-título-_9_.webp);
 }
 
@@ -168,7 +167,7 @@ header nav ul li a.actual {
   font-size: 1.8rem;
 }
 
-main.cuerpoindex {
+main.cuerpoIndex {
   height: 70vh;
   grid-area: main;
   display: grid;
@@ -178,7 +177,7 @@ main.cuerpoindex {
   grid-template-areas: "aside section";
 }
 @media screen and (max-width: 320px) {
-  main.cuerpoindex {
+  main.cuerpoIndex {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -186,12 +185,12 @@ main.cuerpoindex {
   }
 }
 @media screen and (max-width: 480px) {
-  main.cuerpoindex {
+  main.cuerpoIndex {
     height: 60vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoindex {
+  main.cuerpoIndex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -199,25 +198,25 @@ main.cuerpoindex {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main.cuerpoindex {
+  main.cuerpoIndex {
     display: flex;
   }
 }
-main.cuerpoindex aside {
+main.cuerpoIndex aside {
   grid-area: aside;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoindex aside {
+  main.cuerpoIndex aside {
     width: 50%;
     height: 50%;
     flex-direction: column;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main.cuerpoindex aside {
+  main.cuerpoIndex aside {
     flex-direction: column;
     width: 50%;
     height: min-content;
@@ -226,34 +225,34 @@ main.cuerpoindex aside {
   }
 }
 @media screen and (max-width: 320px) {
-  main.cuerpoindex aside img {
+  main.cuerpoIndex aside img {
     width: 40%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoindex aside img {
+  main.cuerpoIndex aside img {
     padding-top: 100px;
     width: 60%;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main.cuerpoindex aside img {
+  main.cuerpoIndex aside img {
     width: 55%;
   }
 }
-main.cuerpoindex section {
+main.cuerpoIndex section {
   grid-area: section;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 480px) {
-  main.cuerpoindex section {
+  main.cuerpoIndex section {
     width: 90%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoindex section {
+  main.cuerpoIndex section {
     height: 50%;
     width: 50%;
     display: flex;
@@ -262,29 +261,29 @@ main.cuerpoindex section {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main.cuerpoindex section {
+  main.cuerpoIndex section {
     width: 50%;
     padding-right: 20px;
   }
 }
-main.cuerpoindex section article {
+main.cuerpoIndex section article {
   text-align: left;
   padding-right: 50px;
   flex-grow: 1;
 }
 @media screen and (max-width: 480px) {
-  main.cuerpoindex section article {
+  main.cuerpoIndex section article {
     text-align: center;
     width: 100%;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main.cuerpoindex section article {
+  main.cuerpoIndex section article {
     width: 90%;
     padding-right: 20px;
   }
 }
-main.cuerpoindex section article h1 {
+main.cuerpoIndex section article h1 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: inconsolata;
@@ -294,7 +293,7 @@ main.cuerpoindex section article h1 {
   border-radius: 30%;
 }
 @media screen and (max-width: 480px) {
-  main.cuerpoindex section article h1 {
+  main.cuerpoIndex section article h1 {
     font-size: 1rem;
     padding: 0;
     border-radius: 10px;
@@ -302,7 +301,7 @@ main.cuerpoindex section article h1 {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoindex section article h1 {
+  main.cuerpoIndex section article h1 {
     font-size: 0.8rem;
     line-height: 1rem;
     padding: 0.5rem;
@@ -315,7 +314,7 @@ main.cuerpoindex section article h1 {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main.cuerpoindex section article h1 {
+  main.cuerpoIndex section article h1 {
     font-size: 1rem;
     padding: 20px;
     border-radius: 15px;
@@ -323,7 +322,7 @@ main.cuerpoindex section article h1 {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoindex section article {
+  main.cuerpoIndex section article {
     height: 50%;
     width: 100%;
     display: flex;
@@ -338,7 +337,7 @@ main div label {
   font-size: 1.2rem;
 }
 
-main.cuerpoestudios {
+main.cuerpoEstudios {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
   font-family: sans-serif;
@@ -347,86 +346,86 @@ main.cuerpoestudios {
   justify-content: center;
   margin-bottom: 6%;
 }
-main.cuerpoestudios .contenedor {
+main.cuerpoEstudios .contenedor {
   padding-top: 5rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-main.cuerpoestudios .contenedor .card-section {
+main.cuerpoEstudios .contenedor .card-section {
   display: grid;
   gap: 20rem;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 @media screen and (max-width: 480px) {
-  main.cuerpoestudios .contenedor .card-section {
+  main.cuerpoEstudios .contenedor .card-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
     gap: 5rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpoestudios .contenedor .card-section {
+  main.cuerpoEstudios .contenedor .card-section {
     gap: 5rem;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  main.cuerpoestudios .contenedor .card-section {
+  main.cuerpoEstudios .contenedor .card-section {
     gap: 5rem;
   }
 }
 @media screen and (min-width: 1544px) {
-  main.cuerpoestudios .contenedor .card-section {
+  main.cuerpoEstudios .contenedor .card-section {
     gap: 30rem;
   }
 }
-main.cuerpoestudios .contenedor .card-section .card {
+main.cuerpoEstudios .contenedor .card-section .card {
   display: flex;
   background-color: white;
 }
-main.cuerpoestudios .contenedor .card-section .card .card-header {
+main.cuerpoEstudios .contenedor .card-section .card .card-header {
   flex-basis: 100%;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-main.cuerpoestudios .contenedor .card-section .card .card-body {
+main.cuerpoEstudios .contenedor .card-section .card .card-body {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 60%;
 }
-main.cuerpoestudios .contenedor .card-section .card .card-body h1 {
+main.cuerpoEstudios .contenedor .card-section .card .card-body h1 {
   font-size: 1.2rem;
   font-family: inconsolata;
 }
 @media screen and (max-width: 480px) {
-  main.cuerpoestudios .contenedor .card-section .card .card-body h1 {
+  main.cuerpoEstudios .contenedor .card-section .card .card-body h1 {
     font-size: 0.8rem;
   }
 }
-main.cuerpoestudios .contenedor .card-section .card .card-body h2 {
+main.cuerpoEstudios .contenedor .card-section .card .card-body h2 {
   font-size: 1.2rem;
   font-family: inconsolata;
 }
 @media screen and (max-width: 480px) {
-  main.cuerpoestudios .contenedor .card-section .card .card-body h2 {
+  main.cuerpoEstudios .contenedor .card-section .card .card-body h2 {
     font-size: 0.8rem;
   }
 }
 
-main.cuerpointereses {
+main.cuerpoIntereses {
   height: 70vh;
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "aside seccionuno" "aside secciondos";
 }
-main.cuerpointereses aside {
+main.cuerpoIntereses aside {
   grid-area: aside;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-main.cuerpointereses section.seccionuno {
+main.cuerpoIntereses section.seccionUno {
   grid-area: seccionuno;
   display: flex;
   flex-wrap: wrap;
@@ -434,55 +433,55 @@ main.cuerpointereses section.seccionuno {
   text-align: center;
   padding-right: 25px;
 }
-main.cuerpointereses section.seccionuno div {
+main.cuerpoIntereses section.seccionUno div {
   display: flex;
   align-items: center;
 }
 @media screen and (max-width: 480px) {
-  main.cuerpointereses section.seccionuno div {
+  main.cuerpoIntereses section.seccionUno div {
     padding-top: 100px;
   }
 }
-main.cuerpointereses section.seccionuno div h1 {
+main.cuerpoIntereses section.seccionUno div h1 {
   font-size: 1.3rem;
   color: white;
   font-family: inconsolata;
 }
 @media screen and (max-width: 320px) {
-  main.cuerpointereses section.seccionuno div h1 {
+  main.cuerpoIntereses section.seccionUno div h1 {
     font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 480px) {
-  main.cuerpointereses section.seccionuno div h1 {
+  main.cuerpoIntereses section.seccionUno div h1 {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  main.cuerpointereses section.seccionuno div h1 {
+  main.cuerpoIntereses section.seccionUno div h1 {
     font-size: 1rem;
   }
 }
-main.cuerpointereses section.secciondos {
+main.cuerpoIntereses section.seccionDos {
   grid-area: secciondos;
 }
-main.cuerpointereses section.secciondos .slider {
+main.cuerpoIntereses section.seccionDos .slider {
   width: 60%;
   margin: auto;
   height: auto;
   overflow: hidden;
 }
-main.cuerpointereses section.secciondos .slider ul {
+main.cuerpoIntereses section.seccionDos .slider ul {
   padding: 0;
   display: flex;
   width: 200%;
   animation: slider 10s infinite alternate;
 }
-main.cuerpointereses section.secciondos .slider ul li {
+main.cuerpoIntereses section.seccionDos .slider ul li {
   width: 60%;
   list-style: none;
 }
-main.cuerpointereses section.secciondos .slider ul li img {
+main.cuerpoIntereses section.seccionDos .slider ul li img {
   width: 60%;
 }
 
@@ -510,49 +509,49 @@ main.cuerpointereses section.secciondos .slider ul li img {
   }
 }
 @media screen and (max-width: 480px) {
-  main.cuerposm .container {
+  main.cuerpoSM .container {
     margin-top: 100px;
   }
 }
-main.cuerposm .container div h1 {
+main.cuerpoSM .container div h1 {
   font-family: inconsolata;
   color: white;
 }
-main.cuerposm .container div {
+main.cuerpoSM .container div {
   background-color: rgba(0, 0, 0, 0.411);
 }
-main.cuerposm .container div div ul li {
+main.cuerpoSM .container div div ul li {
   color: rgb(20, 81, 161);
 }
-main.cuerposm .container div div ul li span.title {
+main.cuerpoSM .container div div ul li span.title {
   font-size: 1.5rem;
   font-family: inconsolata;
   font-weight: 500;
   color: white;
 }
 @media screen and (max-width: 480px) {
-  main.cuerposm .container div div ul li span.title {
+  main.cuerpoSM .container div div ul li span.title {
     font-size: 1rem;
   }
 }
-main.cuerposm .container div div ul li span.value {
+main.cuerpoSM .container div div ul li span.value {
   font-size: 1.3rem;
   font-family: inconsolata;
   color: white;
 }
 @media screen and (max-width: 480px) {
-  main.cuerposm .container div div ul li span.value {
+  main.cuerpoSM .container div div ul li span.value {
     font-size: 0.8rem;
   }
 }
-main.cuerposm .container div h2 {
+main.cuerpoSM .container div h2 {
   font-family: inconsolata;
   color: white;
 }
-main.cuerposm .container div .background {
+main.cuerpoSM .container div .background {
   background-color: rgba(255, 255, 255, 0.342);
 }
-main.cuerposm .container div h6 {
+main.cuerpoSM .container div h6 {
   font-size: 1.5rem;
   font-family: inconsolata;
   color: white;
