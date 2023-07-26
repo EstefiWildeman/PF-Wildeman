@@ -186,6 +186,10 @@ main.cuerpoEstudios {
         padding-left: 2rem;
         padding-right: 2rem;
 
+        @include mobile{
+            margin-top: 15%;
+        }
+
         .card-section {
             display: grid;
             gap: 20rem;
@@ -198,6 +202,7 @@ main.cuerpoEstudios {
             }
 
             @include tablet {
+                
                 gap: 5rem;
             }
 
@@ -222,7 +227,7 @@ main.cuerpoEstudios {
                 .card-body {
                     display: flex;
                     flex-wrap: wrap;
-                    flex-basis: 60%;
+                    flex-basis: 100%;
 
 
                     h1 {
@@ -471,5 +476,12 @@ main.cuerpoSM {
 }
 
 main.contacto {
-    height: 60vh;
+    height: 70vh;
+
+    @include mobile{
+        height: 78vh;
+    }
+    @include tablet{
+        margin-bottom: 10% ;
+    }
 }

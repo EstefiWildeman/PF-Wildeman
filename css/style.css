@@ -346,6 +346,11 @@ main.cuerpoEstudios .contenedor {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+@media screen and (max-width: 480px) {
+  main.cuerpoEstudios .contenedor {
+    margin-top: 15%;
+  }
+}
 main.cuerpoEstudios .contenedor .card-section {
   display: grid;
   gap: 20rem;
@@ -385,7 +390,7 @@ main.cuerpoEstudios .contenedor .card-section .card .card-header {
 main.cuerpoEstudios .contenedor .card-section .card .card-body {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 60%;
+  flex-basis: 100%;
 }
 main.cuerpoEstudios .contenedor .card-section .card .card-body h1 {
   font-size: 1.2rem;
@@ -585,7 +590,17 @@ main.cuerpoSM .container .archivos div a h5 {
 }
 
 main.contacto {
-  height: 60vh;
+  height: 70vh;
+}
+@media screen and (max-width: 480px) {
+  main.contacto {
+    height: 78vh;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  main.contacto {
+    margin-bottom: 10%;
+  }
 }
 
 footer {
