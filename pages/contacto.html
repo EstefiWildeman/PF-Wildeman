@@ -48,28 +48,31 @@
     </header>
 
     <main class=" contacto col d-flex flex-column align-items-center mt-5">  
-        <div class="mb-4 mt-4">
-            <label for="exampleFormControlInput1" class=" text-white">Nombre y Apellido</label>
-            <input type="name" class="form-control form-control-sm" id="NyA" required>
-        </div>
-        <div class="mb-4">
-            <label for="exampleFormControlInput1" class="  text-white">Telefono</label>
-            <input type="number" class="form-control form-control-sm " id="Tel" required>
-        </div>
-        <div class="mb-4">
-            <label for="exampleFormControlInput1" class=" text-white">Direccion de mail</label>
-            <input type="email" class="form-control form-control-sm" id="Mail"
-                placeholder="name@example.com" required>
-        </div>
-        <div class="mb-4">
-            <label for="exampleFormControlTextarea1" class="text-white">Comentario</label>
-            <textarea class="form-control form-control-s" id="Comentario" rows="3"
-                placeholder="Deje su comentario..." required></textarea>
-        </div>
-        <div>
-            <button type="button" class="btn btn-light btn-md mt-2 mb-5">Cancelar</button>
-            <button type="button" class="btn btn-light btn-md mt-2 mb-5">Enviar</button>
-        </div>
+        <form name="contact" method="POST" data-netlify="true">
+            <div class="mb-4 mt-4">
+                <label for="exampleFormControlInput1" class=" text-white">Nombre y Apellido</label>
+                <input type="name" class="form-control form-control-sm" id="NyA" required>
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="  text-white">Telefono</label>
+                <input type="number" class="form-control form-control-sm " id="Tel" required>
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class=" text-white">Direccion de mail</label>
+                <input type="email" class="form-control form-control-sm" id="Mail"
+                    placeholder="name@example.com" required>
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlTextarea1" class="text-white">Comentario</label>
+                <textarea class="form-control form-control-s" id="Comentario" rows="3"
+                    placeholder="Deje su comentario..." required></textarea>
+            </div>
+            <div>
+                <button type="button" class="btn btn-light btn-md mt-2 mb-5">Cancelar</button>
+                <button type="button" class="btn btn-light btn-md mt-2 mb-5">Enviar</button>
+            </div>
+        </form>
+        
     </main>
 
     <footer>
