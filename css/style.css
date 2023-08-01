@@ -190,6 +190,7 @@ main.cuerpoIndex {
     flex-direction: row;
     flex-wrap: wrap;
     height: 70vh;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -219,9 +220,18 @@ main.cuerpoIndex aside {
     align-items: center;
   }
 }
+main.cuerpoIndex aside img {
+  animation: float 6s ease-out;
+}
 @media screen and (max-width: 320px) {
   main.cuerpoIndex aside img {
     width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  main.cuerpoIndex aside img {
+    width: 70%;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
@@ -233,6 +243,17 @@ main.cuerpoIndex aside {
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   main.cuerpoIndex aside img {
     width: 55%;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(55px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 main.cuerpoIndex section {
@@ -270,6 +291,7 @@ main.cuerpoIndex section article {
   main.cuerpoIndex section article {
     text-align: center;
     width: 100%;
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -412,7 +434,7 @@ main.cuerpoEstudios .contenedor .card-section .card .card-body h2 {
 }
 
 main.cuerpoIntereses {
-  height: 70vh;
+  height: 85%;
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -436,11 +458,7 @@ main.cuerpoIntereses section.seccionUno {
 main.cuerpoIntereses section.seccionUno div {
   display: flex;
   align-items: center;
-}
-@media screen and (max-width: 480px) {
-  main.cuerpoIntereses section.seccionUno div {
-    padding-top: 100px;
-  }
+  padding-top: 30px;
 }
 main.cuerpoIntereses section.seccionUno div h1 {
   font-size: 1.3rem;
@@ -449,11 +467,12 @@ main.cuerpoIntereses section.seccionUno div h1 {
 }
 @media screen and (max-width: 320px) {
   main.cuerpoIntereses section.seccionUno div h1 {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
   }
 }
 @media screen and (max-width: 480px) {
   main.cuerpoIntereses section.seccionUno div h1 {
+    margin-top: 55px;
     font-size: 0.8rem;
   }
 }
@@ -589,17 +608,9 @@ main.cuerpoSM .container .archivos div a h5 {
   }
 }
 
-main.contacto {
-  height: 65vh;
-}
-@media screen and (max-width: 480px) {
-  main.contacto {
-    height: 78vh;
-  }
-}
 @media screen and (min-width: 481px) and (max-width: 600px) {
   main.contacto {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 }
 

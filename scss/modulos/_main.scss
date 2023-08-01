@@ -19,6 +19,7 @@ main.cuerpoIndex {
             "section"
             "aside"
         ;
+        
     }
 
     @include mobile {
@@ -30,6 +31,7 @@ main.cuerpoIndex {
         flex-direction: row;
         flex-wrap: wrap;
         height: 70vh;
+        margin-top: 25px;
     }
 
     @include desktop {
@@ -58,8 +60,17 @@ main.cuerpoIndex {
         }
 
         img {
+            
+            animation: float 6s ease-out;
+
+
             @include mobilemin {
                 width: 40%;
+            }
+
+            @include mobile{
+                width: 70%;
+                margin-top: 20px;
             }
 
             @include tablet {
@@ -71,6 +82,21 @@ main.cuerpoIndex {
                 width: 55%;
 
             }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(55px)
+            }
+
+            100% {
+                transform: translateX(0px)
+            }
+
         }
     }
 
@@ -90,6 +116,7 @@ main.cuerpoIndex {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            
         }
 
         @include desktop {
@@ -102,9 +129,11 @@ main.cuerpoIndex {
             padding-right: 50px;
             flex-grow: 1;
 
+
             @include mobile {
                 text-align: center;
                 width: 100%;
+                padding-right: 10px;
             }
 
             @include desktop {
@@ -186,7 +215,7 @@ main.cuerpoEstudios {
         padding-left: 2rem;
         padding-right: 2rem;
 
-        @include mobile{
+        @include mobile {
             margin-top: 15%;
         }
 
@@ -202,7 +231,7 @@ main.cuerpoEstudios {
             }
 
             @include tablet {
-                
+
                 gap: 5rem;
             }
 
@@ -254,8 +283,7 @@ main.cuerpoEstudios {
 }
 
 main.cuerpoIntereses {
-    
-    height: 70vh;
+    height: 85%;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -284,24 +312,19 @@ main.cuerpoIntereses {
         div {
             display: flex;
             align-items: center;
-
-
-            @include mobile {
-                padding-top: 100px;
-            }
+            padding-top: 30px;
 
             h1 {
                 font-size: 1.3rem;
                 color: $text;
                 font-family: $nav;
 
-
                 @include mobilemin {
-                    font-size: 0.5rem;
-
+                    font-size: 0.3rem;
                 }
 
                 @include mobile {
+                    margin-top: 55px;
                     font-size: 0.8rem;
                 }
 
@@ -373,7 +396,7 @@ main.cuerpoIntereses {
 }
 
 main.cuerpoSM {
-    
+
     .container {
         @include mobile {
             margin-top: 100px;
@@ -440,48 +463,50 @@ main.cuerpoSM {
                 color: $text;
             }
         }
-        div{
-            h4{
+
+        div {
+            h4 {
                 font-family: $nav;
                 color: $text;
             }
         }
-        .archivos{
+
+        .archivos {
             display: flex;
             justify-content: center;
             gap: 100px;
 
-            @include mobile{
+            @include mobile {
                 gap: 50px;
             }
-            div{
+
+            div {
                 display: flex;
                 align-items: center;
                 margin-top: 35px;
                 margin-bottom: 30px;
-                a{
+
+                a {
                     text-decoration: none;
-                    h5{
+
+                    h5 {
                         text-align: center;
                         color: $text;
-                        @include mobile{
+
+                        @include mobile {
                             font-size: 0.8rem;
                         }
                     }
                 }
-                
+
             }
         }
     }
 }
 
 main.contacto {
-    height: 65vh;
 
-    @include mobile{
-        height: 78vh;
-    }
-    @include tablet{
-        margin-bottom: 10% ;
+    @include tablet {
+        margin-bottom: 5%;
     }
 }
